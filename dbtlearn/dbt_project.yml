@@ -34,4 +34,6 @@ models:
     +materialized: view
     dim: # Set dimension (dim) models be materialized as tables by default
       +materialized: table
-    
+    src:
+      +materialized: ephemeral
+      
