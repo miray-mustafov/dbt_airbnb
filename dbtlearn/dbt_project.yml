@@ -33,6 +33,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   dbtlearn:
     +materialized: view
+    +post-hook: # the below sql will be executed after every model in order to grand permission to reporter ('this' is the current model)
+      - "GRANT SELECT ON {{ this }} TO ROLE REPORTER"
     dim: # Set dimension (dim) models be materialized as tables by default
       +materialized: table
     src:
