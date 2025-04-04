@@ -1,3 +1,10 @@
+venv/
+.env
 .vscode
 .idea/
+__pycache__/
+
+# dagster
+.tmp_dagster_home_*/
+
 *tst.*
