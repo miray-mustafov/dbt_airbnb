@@ -13,4 +13,7 @@ package-lock.yml
 # dagster
 .tmp_dagster_home_*/
 
+# dbt vscode extension
+.user.yml
+
 *tst.* 
