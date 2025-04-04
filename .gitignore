@@ -3,6 +3,7 @@ venv/
 .vscode
 .idea/
 __pycache__/
+logs/
 
 # dagster
 .tmp_dagster_home_*/
