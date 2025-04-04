@@ -3,9 +3,14 @@ venv/
 .vscode
 .idea/
 __pycache__/
+
+# dbt
+target/
+dbt_packages/
 logs/
+package-lock.yml
 
 # dagster
 .tmp_dagster_home_*/
 
-*tst.*
+*tst.* 
